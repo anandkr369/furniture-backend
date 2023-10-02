@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import sqlite3 from "sqlite3";
 const app = express();
-const db = new sqlite3.Database("./db/anand.db");
+const db = new sqlite3.Database("./db/anand1.db");
 app.use(cors())
 app.use(bodyParser.json())
 
