@@ -19,6 +19,9 @@ app.post("/upload", (req,res) => {
     db.run(`INSERT INTO t1(firstName,lastName,email,message) VALUES("${req.body.firstName}", "${req.body.lastName}", "${req.body.email}", "${req.body.message}" )`)
     res.send("Received here...")
 })
+app.get("/", function(req, res) {
+    res.send("1")
+  })
 app.listen(3000,function(){
     console.log("listining to port 3000");
 })
