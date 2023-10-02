@@ -22,7 +22,7 @@ app.post("/upload", (req,res) => {
 app.get("/", function(req, res) {
     res.send("1")
   })
-app.listen(3000,function(){
-    console.log("listining to port 3000");
+app.listen(80,function(){
+    console.log("listining to port 80");
 })
 
